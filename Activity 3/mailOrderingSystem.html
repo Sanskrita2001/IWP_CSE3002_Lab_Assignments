@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mail Order System</title>
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+            td,
+			th {
+				border: 1px solid #dddddd;
+				padding: 8px;
+				background-color: #103157;
+				color: #fff;
+			}
+
+			tr {
+				background-color: #afd8f0;
+				color: #103157;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Mail Order System</h1>
+		<hr />
+		<p>Press F5 or Refresh to load script again.</p>
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Total Sales</th>
+			</tr>
+			<tr>
+				<td>Product 1</td>
+				<td>29.8</td>
+			</tr>
+			<tr>
+				<td>Product 2</td>
+				<td>450</td>
+			</tr>
+			<tr>
+				<td>Product 3</td>
+				<td>69.86</td>
+			</tr>
+			<tr>
+				<td>Product 4</td>
+				<td>4.49</td>
+			</tr>
+			<tr>
+				<td>Product 5</td>
+				<td>34.45</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			var qty;
+			var number = 0;
+			var ans = 0;
+			var counter = 0;
+			var total = 0;
+			number = window.prompt('Enter product number, -1 to Quit');
+			number = parseInt(number);
+			while (number != -1) {
+				switch (number) {
+					case 1:
+						qty = parseInt(window.prompt('Enter number of quantities sold for product-1:'));
+						ans = 29.8 * qty;
+						break;
+					case 2:
+						qty = parseInt(window.prompt('Enter number of quantities sold for product-2:'));
+						ans = 450 * qty;
+						break;
+					case 3:
+						qty = parseInt(window.prompt('Enter number of quantities sold for product-3:'));
+						ans = 69.86 * qty;
+						break;
+					case 4:
+						qty = parseInt(window.prompt('Enter number of quantities sold for product-4:'));
+						ans = 4.49 * qty;
+						break;
+					case 5:
+						qty = parseInt(window.prompt('Enter number of quantities sold for product-5:'));
+						ans = 34.45 * qty;
+						break;
+					default:
+						window.alert('Wrong input, Please try Again!!!');
+				}
+				counter = counter + 1;
+				total = total + parseInt(ans);
+				number = window.prompt('Enter product number, -1 to Quit');
+				number = parseInt(number);
+			}
+			if (counter != 0) {
+				document.writeln(
+					'<h1> Total Sales for the Last week is: $' + total + '</h1>'
+				);
+			} else {
+				window.alert('No product number is entered!');
+			}
+		</script>
+	</body>
+</html>

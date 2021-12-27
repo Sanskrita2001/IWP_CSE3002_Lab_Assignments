@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        table{
+            position: sticky;
+            margin-left: 44%;
+        }
+        thead{
+            background-color: #463239;
+            color: #ffffff;
+        }
+        tbody{
+            background-color: #c6ad94;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Mail-order house system</h1>
+    <table cellspacing="0" cellpadding="5" border="1">
+        <thead>
+            <tr><th>Product</th><th>Total Sales</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Product 1</td><td>&#36; 29.8</td></tr>
+            <tr><td>Product 2</td><td>&#36; 450</td></tr>
+            <tr><td>Product 3</td><td>&#36; 69.86</td></tr>
+            <tr><td>Product 4</td><td>&#36; 4.49</td></tr>
+            <tr><td>Product 5</td><td>&#36; 34.35</td></tr>
+        </tbody>
+    </table>
+
+    <script type= "text/javascript">
+    var productNo;
+    var quantity;
+    var cost=0;
+    var totalSales=0;
+    var count;
+    productNo= prompt("Enter the product number, Enter 0 to quit");
+    productNo= parseInt(productNo);
+    while(productNo!=0){
+        switch(productNo){
+            case 1:
+                quantity= prompt("Enter the quantity purchased for product 1");
+                quantity= parseInt(quantity);
+                cost= 29.8*quantity;
+                break;
+            
+            case 2:
+                quantity= prompt("Enter the quantity purchased for product 2");
+                quantity= parseInt(quantity);
+                cost= 450*quantity;
+                break;
+
+            case 3:
+                quantity= prompt("Enter the quantity purchased for product 3");
+                quantity= parseInt(quantity);
+                cost= 69.86*quantity;
+                break;
+
+            case 4:
+                quantity= prompt("Enter the quantity purchased for product 4");
+                quantity= parseInt(quantity);
+                cost= 4.49*quantity;
+                break;
+                
+            case 5:
+                quantity= prompt("Enter the quantity purchased for product 5");
+                quantity= parseInt(quantity);
+                cost= 34.35*quantity;
+                break;
+        }
+        count++;
+        totalSales+= cost;
+        productNo= prompt("Enter the product number, Enter 0 to quit");
+        productNo= parseInt(productNo);
+    }
+    if(count!=0){
+        document.writeln('<h3 align= "\center"\>Total Sales= $' + totalSales.toFixed(2) + '<h3>');
+    }
+    else{
+        prompt("Product number not entered!")
+    }
+    </script>
+    
+</body>
+</html>

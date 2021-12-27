@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Perform Action</title>
+		<style>
+            .container{
+                width: 50%;
+                margin: 0 auto;
+                border: 2px solid;
+                padding: 50px;
+            }
+			body {
+				text-align: center;
+			}
+            input{
+                margin-bottom: 10px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Increment</h1>
+			<button onclick="add1()">Add 1</button>
+			<input type="text" id="number" value="0" />
+			<hr />
+
+			<h1>Add Numbers</h1>
+			<input type="text" id="num1" />
+			+
+			<input type="text" id="num2" />
+			<button onclick="add()">=</button>
+			<input type="text" id="res" />
+			<hr />
+
+			<h1>Is it Prime?</h1>
+			<input type="text" id="num" value="0" />
+			<button onclick="prime()">Prime?(Yes/No)</button>
+			<input type="text" id="prime" />
+			<hr />
+
+			<h1>Number Guessing Game</h1>
+			<input type="text" id="n" value="0" />
+			<button onclick="guess()">Am I Right?(Yes/No)</button>
+			<input type="text" id="guess" />
+		</div>
+
+		<script>
+			function add1() {
+				var value = parseInt(document.getElementById('number').value, 10);
+				value = isNaN(value) ? 0 : value;
+				value++;
+				document.getElementById('number').value = value;
+			}
+
+			function add() {
+				var a = parseInt(document.getElementById('num1').value, 10);
+				a = isNaN(a) ? 0 : a;
+				b = isNaN(b) ? 0 : b;
+				var b = parseInt(document.getElementById('num2').value, 10);
+				document.getElementById('res').value = a + b;
+			}
+
+			function prime() {
+				var n = parseInt(document.getElementById('num').value, 10);
+				n = isNaN(n) ? 0 : n;
+				if (n <= 1) document.getElementById('prime').value = 'No';
+				var flag = 0;
+				for (var i = 2; i < n; i++) {
+					console.log(i);
+					if (n % i == 0) {
+						flag = 1;
+						break;
+					}
+				}
+				if (flag) {
+					document.getElementById('prime').value = 'No';
+				} else {
+					document.getElementById('prime').value = 'Yes';
+				}
+			}
+
+			function guess() {
+				var ran = Math.floor(Math.random() * 10);
+				var t=5;
+				for(var i=1;i<=t;i++){
+					var n = parseInt(document.getElementById('n').value, 10);
+					n = isNaN(n) ? 0 : n;
+					if (n === ran) {
+					document.getElementById('guess').value = 'Yes';
+				} else if(n>ran  && i!=k-1){
+					document.getElementById('guess').value = n+'is greater than the number';
+				}
+				else if(n<ran  && i!=k-1){
+					document.getElementById('guess').value = n+'is smaller than the number';
+				}
+				}
+				if(i==5){
+					window.prompt('You have exhausted your trials')
+					document.writeln(
+					'<h6> The number was : ' + ran + '</h6>'
+				);
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="college.xsl"?>
+<information>
+  <student>
+    <regno>19BCB0059</regno>
+    <name>Sanskrita Saha</name>
+    <college>VIT</college>
+    <branch>CSE</branch>
+    <course>IWP</course>
+    <year>2019</year>
+    <email>sanskrita.saha2019@vitstudent.ac.in</email>
+    <cgpa>9.45</cgpa>
+    <coursesreg>25</coursesreg>
+    <creditsearned>97</creditsearned>
+  </student>
+  <student>
+    <regno>19BEE0059</regno>
+    <name>Ekta Ray</name>
+    <college>BITS</college>
+    <branch>EEE</branch>
+    <course>Micro</course>
+    <year>2019</year>
+    <email>ekta.ray2019@bitsstudent.ac.in</email>
+    <cgpa>9.97</cgpa>
+    <coursesreg>22</coursesreg>
+    <creditsearned>96</creditsearned>
+  </student>
+  <student>
+    <regno>19BCE0696</regno>
+    <name>Parijat Niyogi</name>
+    <college>VIT</college>
+    <branch>CSE</branch>
+    <course>PDC</course>
+    <year>2019</year>
+    <email>parijat.niyogi2019@vitstudent.ac.in</email>
+    <cgpa>9.23</cgpa>
+    <coursesreg>22</coursesreg>
+    <creditsearned>89</creditsearned>
+  </student>
+  <student>
+    <regno>19BCT0089</regno>
+    <name>Aritri Basu</name>
+    <college>MIT</college>
+    <branch>CSE</branch>
+    <course>IIP</course>
+    <year>2019</year>
+    <email>aritri.basu2019@mitstudent.ac.in</email>
+    <cgpa>9.20</cgpa>
+    <coursesreg>24</coursesreg>
+    <creditsearned>93</creditsearned>
+  </student>
+  <student>
+    <regno>19BCB0095</regno>
+    <name>Shruti Shreya</name>
+    <college>KIIT</college>
+    <branch>CSE</branch>
+    <course>Netcom</course>
+    <year>2019</year>
+    <email>shruti.shreya2019@kiitstudent.ac.in</email>
+    <cgpa>8.72</cgpa>
+    <coursesreg>23</coursesreg>
+    <creditsearned>87</creditsearned>
+  </student>
+  <student>
+    <regno>19BCE0056</regno>
+    <name>Rishav Naskar</name>
+    <college>VIT</college>
+    <branch>CSE</branch>
+    <course>IWP</course>
+    <year>2019</year>
+    <email>rishav.naskar2019@vitstudent.ac.in</email>
+    <cgpa>9.72</cgpa>
+    <coursesreg>22</coursesreg>
+    <creditsearned>88</creditsearned>
+  </student>
+  <student>
+    <regno>19ECE0842</regno>
+    <name>Disha Sharma</name>
+    <college>NIT</college>
+    <branch>CSE</branch>
+    <course>IWP</course>
+    <year>2019</year>
+    <email>disha.sharma2019@nitstudent.ac.in</email>
+    <cgpa>8.42</cgpa>
+    <coursesreg>26</coursesreg>
+    <creditsearned>93</creditsearned>
+  </student>
+  <student>
+    <regno>19BME2249</regno>
+    <name>Saumya Jayanti</name>
+    <college>IIIT</college>
+    <branch>BME</branch>
+    <course>Physics</course>
+    <year>2019</year>
+    <email>saumya.jayanti2019@vitstudent.ac.in</email>
+    <cgpa>9.24</cgpa>
+    <coursesreg>21</coursesreg>
+    <creditsearned>89</creditsearned>
+  </student>  
+  <student>     
+    <regno>19BCE0040</regno>
+    <name>Kunal kulkarni</name>
+    <college>SRM</college>
+    <branch>CSE</branch>
+    <course>IWP</course>
+    <year>2019</year>
+    <email>rakshita.badhkar2019@srmstudent.ac.in</email>
+    <cgpa>8.42</cgpa>
+    <coursesreg>23</coursesreg>
+    <creditsearned>93</creditsearned>
+  </student>
+  <student>
+    <regno>19BCE0037</regno>
+    <name>Yati Rastogi</name>
+    <college>BITS</college>
+    <branch>ECE</branch>
+    <course>SEMS</course>
+    <year>2019</year>
+    <email>yati.rastogi2019@vitstudent.ac.in</email>
+    <cgpa>6.21</cgpa>
+    <coursesreg>24</coursesreg>
+    <creditsearned>90</creditsearned>
+  </student>  
+</information>

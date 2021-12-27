@@ -1,0 +1,12 @@
+<!ELEMENT information(student)>
+<!ELEMENT student(regno, name, college, branch, course, year, email, cgpa, coursesreg, creditsearned)>
+<!ELEMENT regno(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT college(#PCDATA)>
+<!ELEMENT branch(#PCDATA)>
+<!ELEMENT course(#PCDATA)>
+<!ELEMENT year(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT cgpa(#PCDATA)>
+<!ELEMENT coursesreg(#PCDATA)>
+<!ELEMENT creditsearned(#PCDATA)>
